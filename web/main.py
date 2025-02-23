@@ -1,6 +1,6 @@
 from flask import Flask
 import cowsay
-from quote import get_quote
+import quote
 
 
 characters = ['beavis', 'cheese', 'cow', 'daemon', 'dragon', 'fox', 'ghostbusters', 'kitty',
@@ -25,7 +25,7 @@ def animal(character):
     if character not in characters:
         return say_something('miki', "看屁喔")
     
-    return say_something(character, get_quote())
+    return say_something(character, quote.get_quote())
 
 if __name__ == '__main__':
     app.run(debug=True)

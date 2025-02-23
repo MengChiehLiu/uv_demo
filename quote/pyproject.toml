@@ -1,0 +1,20 @@
+[project]
+name = "quote"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "MengChiehLiu", email = "jk211896@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "opencc>=1.1.9",
+    "requests>=2.32.3",
+]
+
+[project.scripts]
+quote = "quote:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

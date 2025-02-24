@@ -10,8 +10,5 @@ dependencies = [
     "quote",
 ]
 
-[project.scripts]
-main = "main.py"
-
 [tool.uv.sources]
 quote = { path = "../quote" }

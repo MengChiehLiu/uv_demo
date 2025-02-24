@@ -1,5 +1,4 @@
 version = 1
-revision = 1
 requires-python = ">=3.13"
 
 [[package]]
@@ -43,24 +42,18 @@ wheels = [
 ]
 
 [[package]]
-name = "opencc"
-version = "1.1.9"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/e6/a2/0e86df1284143c389a3a6e33b159394da34b500a62b2b9c918949a2e6438/opencc-1.1.9.tar.gz", hash = "sha256:8ad72283732951303390fae33a1ceda98ac9b03368a8f2912edc934d74077e4a", size = 3409025 }
-
-[[package]]
 name = "quote"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
-    { name = "opencc" },
     { name = "requests" },
+    { name = "zhconv" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "opencc", specifier = ">=1.1.9" },
     { name = "requests", specifier = ">=2.32.3" },
+    { name = "zhconv", specifier = ">=1.4.3" },
 ]
 
 [[package]]
@@ -86,3 +79,9 @@ sdist = { url = "https://files.pythonhosted.org/packages/aa/63/e53da845320b757bf
 wheels = [
     { url = "https://files.pythonhosted.org/packages/c8/19/4ec628951a74043532ca2cf5d97b7b14863931476d117c471e8e2b1eb39f/urllib3-2.3.0-py3-none-any.whl", hash = "sha256:1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df", size = 128369 },
 ]
+
+[[package]]
+name = "zhconv"
+version = "1.4.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/25/47/c8ae2d5d4025e253211ff3d8c163f457db1da94976cb582337a5ab76cb87/zhconv-1.4.3.tar.gz", hash = "sha256:ad42d9057ca0605f8e41d62b67ca797f879f58193ee6840562c51459b2698c45", size = 211571 }
